@@ -98,7 +98,7 @@ end
 
 -- Install lua parts of the os api
 function os.version()
-    return "CraftOS 1.8"
+    return "GDProKid OS v1.0 - ComputerCraft Remix"
 end
 
 function os.pullEventRaw(sFilter)
@@ -592,6 +592,12 @@ end
 
 local nativeShutdown = os.shutdown
 function os.shutdown()
+    term.clear()
+    term.setCursorPos(2,3)
+    write( "Thanks for using!" )
+    term.setCursorPos(2.4)
+    write( "Shutting down..." )
+    os.sleep(0.1)
     nativeShutdown()
     while true do
         coroutine.yield()
@@ -600,6 +606,10 @@ end
 
 local nativeReboot = os.reboot
 function os.reboot()
+    term.clear()
+    term.setCurosrPos(2,2)
+    write( "Rebooting..." )
+    os.sleep(0.1)
     nativeReboot()
     while true do
         coroutine.yield()
@@ -871,10 +881,14 @@ if commands and fs.isDir("rom/apis/command") then
 end
 
 if bAPIError then
-    print("Press any key to continue")
-    os.pullEvent("key")
     term.clear()
     term.setCursorPos(1, 1)
+    print("Notice: A error occured while running a API in this computer.")
+    print( "Press enter to restart, and fix the problem." )
+    os.pullEvent("key.enter")
+    term.clear()
+    term.setCursorPos(1, 1)
+    os.reboot()
 end
 
 -- Set default settings

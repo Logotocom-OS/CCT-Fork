@@ -918,21 +918,17 @@ SOFTWARE.\
 "{\
   html = {\
     head = { title = \"%s\" },\
-    body = { color = \"black\", linkcolor = \"blue\", bgcolor = \"yellow\",\
+    body = { color = \"black\", linkcolor = \"blue\", bgcolor = \"white\",\
       { tag = \"p\", align = \"center\", color = \"red\", bgcolor = \"cyan\",\
-        { tag = \"d\", bgcolor = \"blue\", \"  \" }, { bgcolor = \"blue\", \"  \" }, { bgcolor = \"sky\", \"             \" }, { bgcolor = \"blue\", \"  \" }, \"\\r\", { bgcolor = \"blue\", \"  \" }, { bgcolor = \"sky\", \"   my site   \" }, { bgcolor = \"blue\", \"  \" }, \"\\r\", { bgcolor = \"blue\", \"  \" }, { bgcolor = \"sky\", \"             \" }, { bgcolor = \"blue\", \"  \" }, \"\\r\", { bgcolor = \"blue\", \"                 \" }\
+        { tag = \"d\", bgcolor = \"blue\", \"  \" }, { bgcolor = \"blue\", \"  \" }, { bgcolor = \"sky\", \"             \" }, { bgcolor = \"blue\", \"  \" }, \"\\r\", { bgcolor = \"blue\", \"  \" }, { bgcolor = \"sky\", \"   Emails   \" }, { bgcolor = \"blue\", \"  \" }, \"\\r\", { bgcolor = \"blue\", \"  \" }, { bgcolor = \"sky\", \"             \" }, { bgcolor = \"blue\", \"  \" }, \"\\r\", { bgcolor = \"blue\", \"                 \" }\
       },\
       { tag = \"p\", align = \"left\",\
-        \"Welcome to %s, where everyone has loads of fun.\"\
+        \"Welcome to %s, where the emails go.\"\
       },\
       { tag = \"p\", align = \"left\",\
-        \"Be sure to check out our great departments.\"\
+        \"Be sure to check out our great departments!\"\
       },\
-      { tag = \"p\", align = \"left\",\
-        \" \", { tag = \"a\", href = \"../joe.html\", \"Joe's Bar & Grill\" }, \"\\r \", { tag = \"a\", href = \"../mary.html\", \"Mary's Florist\" }, \"\\r \", { tag = \"a\", href = \"../fay.html\", \"Fay's Dating\" }, \"\\r \", { tag = \"a\", href = \"../downloads/myApp\", protocol = \"ftp\", \"Download App\" }\
-      },\
-      { tag = \"l\", width = \"50\", align = \"center\", color = \"brown\" }\
-    },\
+      { tag = \"l\", width = \"50\", align = \"center\", color = \"black\" }\
   }\
 }\
 ",

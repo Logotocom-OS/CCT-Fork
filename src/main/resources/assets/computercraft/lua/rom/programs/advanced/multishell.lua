@@ -129,10 +129,10 @@ end
 -- Setup the main menu
 local menuMainTextColor, menuMainBgColor, menuOtherTextColor, menuOtherBgColor
 if parentTerm.isColor() then
-    menuMainTextColor, menuMainBgColor = colors.yellow, colors.black
-    menuOtherTextColor, menuOtherBgColor = colors.black, colors.gray
+    menuMainTextColor, menuMainBgColor = colors.white, colors.blue
+    menuOtherTextColor, menuOtherBgColor = colors.white, colors.gray
 else
-    menuMainTextColor, menuMainBgColor = colors.white, colors.black
+    menuMainTextColor, menuMainBgColor = colors.black, colors.white
     menuOtherTextColor, menuOtherBgColor = colors.black, colors.gray
 end
 

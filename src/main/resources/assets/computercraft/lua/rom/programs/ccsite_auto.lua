@@ -3,9 +3,6 @@ local srcFiles = {
 "/server",
 "/license.txt",
 "/public/index.html",
-"/public/joe.html",
-"/public/mary.html",
-"/public/fay.html",
 "/public/sub/index.html",
 "/public/downloads/myApp"
 }
@@ -833,24 +830,24 @@ SOFTWARE.\
 ",
 "{\
   html = {\
-    head = { title = \"%s\" },\
-    body = { color = \"black\", linkcolor = \"blue\", bgcolor = \"yellow\",\
-      { tag = \"p\", align = \"center\", color = \"gray\", bgcolor = \"cyan\",\
-        \"\\r%s\\r\\r\"\
+    head = { title = \"Joe's Bar & Grill\" },\
+    body = { color = \"light\", linkcolor = \"red\", bgcolor = \"black\",\
+      { tag = \"p\", align = \"center\", color = \"light\", bgcolor = \"black\",\
+        \"\\r\", { bgcolor = \"red\", \" \" }, \" Joe's Bar & Grill \", { bgcolor = \"red\", \" \" }, \"\\r\", { bgcolor = \"red\", \" \" }, { bgcolor = \"orange\", \" \" }, { bgcolor = \"red\", \" \" }, \"                 \", { bgcolor = \"red\", \" \" }, { bgcolor = \"orange\", \" \" }, { bgcolor = \"red\", \" \" }\
       },\
       { tag = \"p\", align = \"left\",\
-        \"Welcome to %s, where everyone has loads of fun.\"\
+        { color = \"blue\", \" Today's Specials:\\r\" }, \"  * Roast Horse Head.\\r  * Toasted Pig's Trotters.\\r  * Pickled Chicken Hearts.\\r  * Gravel Rashed Cow's Rump.\"\
       },\
-      { tag = \"p\", align = \"left\",\
-        \"Be sure to check out our great departments.\"\
+      { tag = \"p\", color = \"blue\", align = \"center\",\
+        { color = \"sky\", \"Eat at Joe's\\r\" }, \"Where every meal tries to run away.\"\
       },\
-      { tag = \"p\", align = \"left\",\
-        \" \", { tag = \"a\", href = \"joe.html\", \"Joe's Bar & Grill\" }, \"\\r \", { tag = \"a\", href = \"mary.html\", \"Mary's Florist\" }, \"\\r \", { tag = \"a\", href = \"fay.html\", \"Fay's Dating\" }, \"\\r \", { tag = \"a\", href = \"downloads/myApp\", protocol = \"ftp:\", \"Download App\" }\
-      },\
-      { tag = \"l\", width = \"50\", align = \"center\", color = \"brown\" }\
+      { tag = \"p\", align = \"center\",\
+        \"Proudly at \", { tag = \"a\", href = \"http:%s\", \"%s\" }\
+      }\
     },\
   }\
 }\
+",
 ",
 "{\
   html = {\
@@ -874,44 +871,35 @@ SOFTWARE.\
 ",
 "{\
   html = {\
-    head = { title = \"Mary's Florist\" },\
-    body = { color = \"blue\", linkcolor = \"red\", bgcolor = \"yellow\",\
-      { tag = \"p\", align = \"center\", color = \"pink\", bgcolor = \"green\",\
-        \"\\r\", { color = \"yellow\", \"{*}\" }, \" Mary's Florist \", { color = \"yellow\", \"{*}\" }, \"\\r \"\
+    head = { title = \"%s\" },\
+    body = { color = \"black\", linkcolor = \"blue\", bgcolor = \"white\",\
+      { tag = \"p\", align = \"center\", color = \"red\", bgcolor = \"cyan\",\
+        { tag = \"d\", bgcolor = \"blue\", \"  \" }, { bgcolor = \"blue\", \"  \" }, { bgcolor = \"sky\", \"             \" }, { bgcolor = \"blue\", \"  \" }, \"\\r\", { bgcolor = \"blue\", \"  \" }, { bgcolor = \"sky\", \"   Emails   \" }, { bgcolor = \"blue\", \"  \" }, \"\\r\", { bgcolor = \"blue\", \"  \" }, { bgcolor = \"sky\", \"             \" }, { bgcolor = \"blue\", \"  \" }, \"\\r\", { bgcolor = \"blue\", \"                 \" }\
       },\
       { tag = \"p\", align = \"left\",\
-        { color = \"black\", \" Our Extensive Range:\\r\" }, \"  + Snapping Dragons.\\r  + Violent Violets.\\r  + Ivy that Poisoned Ivy.\\r  + Two Lipped Tulips.\"\
+        \"Welcome to %s, where the emails go.\"\
       },\
-      { tag = \"p\", color = \"brown\", align = \"center\",\
-        { color = \"black\", \"Mary's Florist\" }, \"\\rWhere nature comes to life,\\rand tries to kill you.\"\
+      { tag = \"p\", align = \"left\",\
+        \"Be sure to check out our great departments!\"\
       },\
-      { tag = \"p\", align = \"center\",\
-        { color = \"black\", \"Proudly at \" }, { tag = \"a\", href = \"http:%s\", \"%s\" }\
-      }\
-    },\
+      { tag = \"l\", width = \"50\", align = \"center\", color = \"black\" }\
   }\
 }\
 ",
 "{\
   html = {\
-    head = { title = \"Fay's Dating\" },\
-    body = { color = \"gray\", linkcolor = \"red\", bgcolor = \"pink\",\
-      { tag = \"p\", align = \"center\", color = \"gray\", bgcolor = \"red\",\
-        \"\\r\", { color = \"pink\", \"oxo\" }, \" Fay's Dating \", { color = \"pink\", \"oxo\" }, \"\\r \"\
+    head = { title = \"%s\" },\
+    body = { color = \"black\", linkcolor = \"blue\", bgcolor = \"white\",\
+      { tag = \"p\", align = \"center\", color = \"red\", bgcolor = \"cyan\",\
+        { tag = \"d\", bgcolor = \"blue\", \"  \" }, { bgcolor = \"blue\", \"  \" }, { bgcolor = \"sky\", \"             \" }, { bgcolor = \"blue\", \"  \" }, \"\\r\", { bgcolor = \"blue\", \"  \" }, { bgcolor = \"sky\", \"   Emails   \" }, { bgcolor = \"blue\", \"  \" }, \"\\r\", { bgcolor = \"blue\", \"  \" }, { bgcolor = \"sky\", \"             \" }, { bgcolor = \"blue\", \"  \" }, \"\\r\", { bgcolor = \"blue\", \"                 \" }\
       },\
       { tag = \"p\", align = \"left\",\
-        \"Meet your perfect match at Fay's Dating.\"\
+        \"Welcome to %s, where the emails go.\"\
       },\
       { tag = \"p\", align = \"left\",\
-        \"We use the latest matching technology available. Our matching services use a highly reliable algorithm based on how much you are involved in online dating, and the amount of money you have spent doing it.\"\
+        \"Be sure to check out our great departments!\"\
       },\
-      { tag = \"p\", color = \"purple\", align = \"center\",\
-        { color = \"black\", \"Fay's Dating\" }, \"\\rWhere even if you're not happy,\\rwe always are.\"\
-      },\
-      { tag = \"p\", align = \"center\",\
-        { color = \"black\", \"Proudly at \" }, { tag = \"a\", href = \"http:%s\", \"%s\" }\
-      }\
-    },\
+      { tag = \"l\", width = \"50\", align = \"center\", color = \"black\" }\
   }\
 }\
 ",

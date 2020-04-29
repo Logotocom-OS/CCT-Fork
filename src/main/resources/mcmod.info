@@ -1,22 +1,22 @@
 [
     {
         "modid" : "computercraft",
-        "name" : "CC: Tweaked",
+        "name" : "ComputerCraft Remixed",
         "version" : "${version}",
         "mcversion" : "${mcversion}",
-        "url" : "https://github.com/SquidDev-CC/CC-Tweaked",
+        "url" : "https://github.com/Logotocom-OS/CCT-Fork",
         "credits" : "Initially created by Daniel Ratcliffe (@DanTwoHundred)",
         "authorList" : [
-            "Daniel Ratcliffe",
-            "Aaron Mills",
-            "SquidDev"
+            "Daniel Ratcliffe (Dev)",
+            "Aaron Mills (Dev)",
+            "SquidDev (Tweaker)"
         ],
-        "description" : "CC: Tweaked is a fork of ComputerCraft, adding programmable computers, turtles and more to Minecraft.",
+        "description" : "CC: Remixed v1.0",
         "logoFile" : "pack.png"
     },
     {
         "modid" : "cctweaked",
-        "name" : "CC: Tweaked",
+        "name" : "ComputerCraft Remixed",
         "version" : "${version}",
         "parent" : "computercraft"
     }

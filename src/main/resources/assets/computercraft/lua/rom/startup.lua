@@ -154,11 +154,21 @@ local function findStartups(sBaseDir)
 end
 -- color warn
 if not term.isColor() then
+    term.setCursorBlink( false )
     print( "WARNING - Operating systems require color. Trying to run the operating systems will prevent from installing!" )
     os.sleep(5)
     print( "" )
-    print( "Press enter to continue" )
-    
+    print( "Press any key to continue" )
+    os.pullEvent("key)
+    term.clear()
+    term.setCursorPos( 1,1 )
+    it term.isColor() then
+        term.setTextColor( colors.yellow )
+    end
+    print( os.version() )
+    term.setTextColor( colors.white )
+    print( "Running OS system installers will be prevented." )
+    print( "Try using a gold advanced computer, instead of the normal one." )
 end
 
 -- Show MOTD

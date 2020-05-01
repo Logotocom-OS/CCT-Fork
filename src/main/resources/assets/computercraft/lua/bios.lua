@@ -108,7 +108,7 @@ end
 function os.pullEvent(sFilter)
     local eventData = table.pack(os.pullEventRaw(sFilter))
     if eventData[1] == "terminate" then
-        error("Terminated", 0)
+        error("Canceled", 0)
     end
     return table.unpack(eventData, 1, eventData.n)
 end

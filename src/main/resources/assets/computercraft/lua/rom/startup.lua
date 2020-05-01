@@ -152,6 +152,14 @@ local function findStartups(sBaseDir)
     end
     return tStartups
 end
+-- color warn
+if not term.isColor() then
+    print( "WARNING - Operating systems require color. Trying to run the operating systems will prevent from installing!" )
+    os.sleep(5)
+    print( "" )
+    print( "Press enter to continue" )
+    
+end
 
 -- Show MOTD
 if settings.get("motd.enable") then

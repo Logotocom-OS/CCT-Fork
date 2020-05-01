@@ -92,6 +92,7 @@ shell.setCompletionFunction("rom/programs/fun/dj.lua", completion.build(
     completion.peripheral
 ))
 shell.setCompletionFunction("rom/programs/fun/advanced/paint.lua", completion.build(completion.file))
+shell.setCompletionFunction('rom/programs/version.lua', completion.build(completion.program))
 shell.setCompletionFunction("rom/programs/http/pastebin.lua", completion.build(
     { completion.choice, { "put ", "get ", "run " } },
     completePastebinPut
